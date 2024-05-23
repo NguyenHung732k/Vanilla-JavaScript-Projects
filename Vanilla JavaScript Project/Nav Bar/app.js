@@ -5,5 +5,3 @@ navToggle.addEventListener("click", function () {
     navList.style.display == "block" ? navList.style.display = 'none' : navList.style.display = 'block'
     navToggle.classList.toggle('active')
 })
-
-c
