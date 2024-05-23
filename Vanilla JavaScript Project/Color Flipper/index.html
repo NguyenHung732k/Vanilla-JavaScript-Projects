@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Color Flipper</title>
+    <link rel="stylesheet" href="./styles.css" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="color-view"></div>
+
+        <div class="color-infor">
+            <div class="color-infor-text">
+                <h4>Color: <span class="color-name">#FFFFFF</span></h4>
+            </div>
+
+            <div class="color-change-container">
+                <div class="color-change">
+                    <input id="toggle-on" class="toggle toggle-left" name="toggle" value="false" type="radio" checked />
+                    <label for="toggle-on" class="toggle-button">HEX</label>
+                    <input id="toggle-off" class="toggle toggle-right" name="toggle" value="true" type="radio" />
+                    <label for="toggle-off" class="toggle-button">RGB</label>
+                </div>
+            </div>
+
+            <button class="color-button">Change</button>
+        </div>
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+
+</html>

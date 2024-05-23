@@ -1,0 +1,148 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #eee;
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+    padding: 10px;
+    background:
+        url(https://source.unsplash.com/E8Ufcyxz514/2400x1823) center / cover no-repeat fixed;
+}
+
+.title {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.testimonial-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    background-color: #fff;
+    color: #333;
+    border-radius: 15px;
+    padding: 80px 50px;
+    width: 800px;
+    min-height: 500px;
+    position: relative;
+    border: 1px solid rgba(255, 255, 255, .25);
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.45);
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
+
+    backdrop-filter: blur(15px);
+}
+
+article {
+    position: relative;
+}
+
+.testimonial {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-weight: 700;
+    height: 100%;
+    line-height: 20px;
+    margin: 20px 0;
+}
+
+.user {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 10px;
+
+    .user-img {
+        border-radius: 50%;
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+    }
+
+    .user-details {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+    }
+
+    .username {
+        margin: 0;
+        font-size: 36px;
+    }
+
+    .role {
+        margin: 0;
+        font-size: 24px;
+    }
+}
+
+.progress-dots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.progress-dot {
+    width: 5px;
+    height: 5px;
+    background-color: #eee;
+    border-radius: 50%;
+}
+
+.progress-dot.active {
+    background-color: #555;
+}
+
+
+.btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0;
+    border-radius: 8px;
+    font-size: 20px;
+    color: #FFFFFF;
+    cursor: pointer;
+    transition: 0.1s ease;
+    background-image: linear-gradient(144deg, #AF40FF, #5B42F3 50%, #00DDEB);
+    box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+}
+
+.btn:hover {
+    scale: 1.1;
+}
+
+#btn-prev {
+    left: 25px;
+}
+
+#btn-next {
+    right: 25px;
+}
+
+#btn-random {
+    top: 105%;
+    left: 50%;
+    transform: translateX(-50%);
+}
