@@ -1,0 +1,123 @@
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+body {
+    background: url('./background.jpg');
+}
+
+.title {
+    text-align: center;
+    font-size: 48px;
+    margin-bottom: 32px;
+}
+
+.underline {
+    width: 60px;
+    height: 4px;
+    background: #c59d5f;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.menu-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.category {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    max-width: 600px;
+
+    border: 1px solid rgba(255, 255, 255, .25);
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.45);
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
+
+    backdrop-filter: blur(15px);
+}
+
+.menu-button {
+    border: none;
+    display: block;
+    position: relative;
+    padding: 12px 32px;
+    font-size: 18px;
+    background: transparent;
+    cursor: pointer;
+    overflow: hidden;
+    text-decoration: none;
+    color: #000;
+    font-size: 20px;
+}
+
+.menu-button::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #c59d5f;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.menu-button:hover::after {
+    width: 100%;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    padding: 30px;
+}
+
+.menu-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 10px 10px;
+
+
+    max-width: 700px;
+    padding: 35px;
+
+    border: 1px solid rgba(255, 255, 255, .25);
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.45);
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
+
+    backdrop-filter: blur(15px);
+}
+
+.menu-item img {
+    object-fit: cover;
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+}
+
+.item-info {
+    max-height: 200px;
+    margin: 0 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+.item-info h1,
+h2,
+p {
+    margin: 10px;
+}
