@@ -1,0 +1,51 @@
+*,
+:before,
+:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('./background.jpg')
+}
+
+.card {
+    width: 80vw;
+    height: calc(9/16 * 80vw);
+    max-width: calc(16/9 * 80vh);
+    max-height: 80vh;
+    display: flex;
+    position: relative;
+    border-radius: 6px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    overflow: hidden;
+
+    backdrop-filter: blur(50px);
+}
+
+.video {
+    display: none;
+    position: relative;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 2;
+    background: #000;
+}
+
+.play {
+    font-size: 36px;
+    position: relative;
+    z-index: 1;
+    margin: auto;
+    opacity: 1;
+    color: white;
+    cursor: pointer;
+    transition: opacity .3s ease-out;
+}
