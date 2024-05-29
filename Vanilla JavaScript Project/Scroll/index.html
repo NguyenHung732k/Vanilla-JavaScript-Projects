@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Navigation Bar</title>
+</head>
+
+<body>
+    <div class="navigation" id="home">
+        <div class="nav-container">
+            <!-- Logo -->
+            <div class="logo">
+                <a href="#">
+                    <img src="./logo.png" alt="logo">
+                </a>
+            </div>
+            <nav>
+                <!-- Hamburger Menu -->
+                <div class="nav-mobile">
+                    <a href="#" id="nav-toggle">
+                        <span></span>
+                    </a>
+                </div>
+
+                <!-- Nav List -->
+                <div class="list-container">
+                    <ul class="nav-list">
+                        <li>
+                            <a href="#home" class="scroll-link">Home</a>
+                        </li>
+                        <li>
+                            <a href="#about" class="scroll-link">About</a>
+                        </li>
+                        <li>
+                            <a href="#services" class="scroll-link">Services</a>
+                        </li>
+                        <li>
+                            <a href="#tours" class="scroll-link">Tours</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <div class="banner-container">
+        <div class="banner">
+            <h1>scroll project</h1>
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas eos
+                neque sunt in? Id, necessitatibus quos quisquam distinctio
+                laudantium fugiat?
+            </p>
+            <a href="#tours" class="scroll-link banner__button">explore tours</a>
+        </div>
+    </div>
+
+    <div class="about-container" id="about">
+        <div class="about">
+            <div class="title">
+                <h2>about <span>us</span></h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="services-container" id="services">
+        <div class="services">
+            <div class="title">
+                <h2>our <span>services</span></h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="tours-container" id="tours">
+        <div class="tours">
+            <div class="title">
+                <h2>featured <span>tours</span></h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-container">
+        <p>
+            copyright &copy; backroads travel tours company
+            <span id="date"></span>. all rights reserved
+        </p>
+    </div>
+    <a class="scroll-link top-link" href="#home">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="./app.js"></script>
+</body>
+
+</html>
